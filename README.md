@@ -1,16 +1,19 @@
 # University Website (Front-End)
 
-This is a front-end project for a university website built using **HTML** and **CSS**. The website includes multiple sections such as **News & Events**, **About the University**, **Photo Gallery**, and **Leadership & Stats** (showing details about the chancellor, vice chancellor, total departments, and total area).
+This is a front-end project for a university website built using **HTML** and **CSS**. The website includes multiple pages and sections such as **News & Events**, **About the University**, **Photo Gallery**, and **Leadership & Stats** (showing details about the chancellor, vice chancellor, total departments, and total area).
 
 ## Features
 
-- **Responsive Design**: The website is designed to be mobile-friendly and responsive across different screen sizes.
-- **Clean UI**: The layout uses modern design principles to ensure a user-friendly experience.
-- **Sections**: 
-  - News & Events
-  - About the University
-  - Photo Gallery
-  - Leadership & Stats
+- 📰 **News & Events**
+- 🏫 **About the University**
+- 📚 **Academics**
+- 🏢 **Departments**
+- 🖼️ **Photo Gallery**
+- 📞 **Contact**
+- 🙋‍♂️ **My Profile**
+
+Each page is styled consistently with a clean UI and basic navigation to simulate a full website experience. Perfect for showcasing front-end development skills!
+
 
 ## Technologies Used
 
