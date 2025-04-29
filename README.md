@@ -43,7 +43,7 @@ You can view the live demo of the website here:
 ![About the Univeresity](img/Screenshot_3.png)
 
 ### 📍 Contact Page
-![Photo Gallery](img/Screensho_4.png)
+![Photo Gallery](img/Screenshot_4.png)
 
 ### 👨‍🏫 Profile Page
 ![Leadership & Stats](img/Screenshot_5.png)
