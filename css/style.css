@@ -1,0 +1,397 @@
+/* Header & Nav */
+header {
+  background-color: #00274C;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem;
+  display: block;
+}
+
+nav li:hover>a {
+  background: #0054A6;
+  border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.dropdown-menu li a {
+  color: #00274C;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a:hover {
+  background: #f0f0f0;
+}
+
+nav li:hover .dropdown-menu {
+  display: block;
+}
+
+.contact {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 160px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.contact li a {
+  color: #00274C;
+  padding: 0.5rem 1rem;
+}
+
+.contact li a:hover {
+  background: #f0f0f0;
+}
+
+nav li:hover .contact {
+  display: block;
+}
+
+
+/* Page Container */
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background: #00274C;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+body.homepage {
+  background-color: #f4f9ff;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.top-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.news-events,
+.about-university {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.news-events h2,
+.about-university h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.news-events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-events ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.gallery {
+  margin-bottom: 40px;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.highlight-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+
+
+/*Departments Page Styles*/
+.container {
+  padding: 20px;
+}
+
+.departments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.department {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.department h3 {
+  margin-top: 0;
+}
+
+/* Academics Page Styles */
+
+#academics {
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f7f9fc, #e8f0fe);
+  color: #333;
+  line-height: 1.6;
+}
+
+#academics h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+#academics h2 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  color: #00509e;
+  border-left: 6px solid #66aaff;
+  padding-left: 15px;
+}
+
+#academics ul {
+  list-style: disc inside;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#academics p {
+  margin: 10px 0;
+}
+
+#academics a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+#academics a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Page Styling */
+
+#location-page {
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px;
+  color: #222;
+}
+
+.contact-page {
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.contact-page h2 {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #0066cc;
+}
+
+.contact-page p {
+  margin: 10px 0;
+}
+
+.map-section {
+  margin-top: 30px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+body.contact-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f9ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.contact-page .contact-us {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page .contact-us h2 {
+  font-size: 32px;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.contact-page .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.contact-page .contact-item h4 {
+  font-size: 18px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.contact-page .contact-item p,
+.contact-page .contact-item a {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.contact-page .contact-item a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.profile-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-top: 2rem;
+}
+
+.profile-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 6px;
+}
