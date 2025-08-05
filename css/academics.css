@@ -1,0 +1,297 @@
+/* Base Styles */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f9ff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #00274C;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem;
+  display: block;
+}
+
+nav li:hover > a {
+  background: #0054A6;
+  border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu,
+.contact {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.dropdown-menu {
+  min-width: 300px;
+}
+
+.contact {
+  min-width: 160px;
+}
+
+.dropdown-menu li a,
+.contact li a {
+  color: #00274C;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a:hover,
+.contact li a:hover {
+  background: #f0f0f0;
+}
+
+nav li:hover .dropdown-menu,
+nav li:hover .contact {
+  display: block;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f9ff; /* soft blue tint */
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+/* Main Heading */
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* Section Titles */
+.academic-section h2 {
+  font-size: 1.8rem;
+  color: #00509e;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-left: 6px solid #66aaff;
+  padding-left: 15px;
+}
+
+/* Section Paragraphs */
+.academic-section p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Section Lists */
+.academic-section ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.academic-section ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #00274C;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .academic-section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Footer */
+footer {
+  background: #00274C;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #00274C;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  nav ul.show-menu {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Mobile Logo */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 410px) {
+  .logo img {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 450px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+}
